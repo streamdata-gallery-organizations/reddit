@@ -1,9 +1,10 @@
-title: Streamdata Gallery Reddit
+title: Streamdata API Gallery - 
+description: A gallery of APIs to demonstrate what is possible when it comes to making data, content, and algorithms more real time, and event-driven as part of the API economy.
 url: reddit.streamdata.gallery
-tag: Reddit
+tag: 
 markdown: kramdown
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", ".DS_Store"]
-github_user: streamdata-gallery
+github_user: streamdata-gallery-entities
 github_repo: reddit
 github_branch: master
 collections:
