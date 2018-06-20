@@ -174,7 +174,7 @@ paths:
         and sr_fullname as the key and sends the status on the websocket URL
         that is provided as part of this response.
       operationId: post&nbsp;V1SubredditEmoji.json
-      x-api-path-slug: v1subredditemojijson-postnbsp
+      x-api-path-slug: v1subredditemoji-json-postnbsp
       parameters:
       - in: query
         name: name

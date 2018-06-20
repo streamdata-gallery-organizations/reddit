@@ -1,24 +1,21 @@
 ---
 name: Reddit
 x-slug: reddit
-description: Reddit /??r??d?t/, stylized as reddit, is an entertainment, social networking
-  service and news website where registered community members can submit content,
-  such as text posts or direct links. Only registered users can then vote submissions
-  up or down to organize the posts and determine their position on the sites pages.
-  Content entries are organized by areas of interest called subreddits.
-image: http://www.redditstatic.com/about/assets/reddit-logo.png
+description: Reddit is a community of millions of users engaging in the creation of
+  content and the sharing of conversation across tens of thousands of topics.
+image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
 x-kinRank: "9"
-x-alexaRank: ""
+x-alexaRank: "6"
 tags: Reddit
-created: "2018-05-22"
-modified: "2018-05-22"
+created: "2018-06-20"
+modified: "2018-06-20"
 url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/apis.md
 specificationVersion: "0.14"
 apis:
 - name: Reddit Get Me
   x-api-slug: reddit
   description: Returns the identity of the user currently authenticated via OAuth.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////v1/me
   tags: Me
@@ -30,7 +27,7 @@ apis:
 - name: Reddit Get Me Karma
   x-api-slug: reddit
   description: Return a breakdown of subreddit karma.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////v1/me/karma
   tags: Me, Karma
@@ -42,7 +39,7 @@ apis:
 - name: Reddit Get Me Prefs
   x-api-slug: reddit
   description: Return the preference settings of the logged in user
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////v1/me/prefs
   tags: Me, Prefs
@@ -54,7 +51,7 @@ apis:
 - name: Reddit Patch Me Prefs
   x-api-slug: reddit
   description: ""
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////v1/me/prefs
   tags: Me, Prefs
@@ -66,7 +63,7 @@ apis:
 - name: Reddit Get Me Trophies
   x-api-slug: reddit
   description: Return a list of trophies for the current user.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////v1/me/trophies
   tags: Me, Trophies
@@ -78,7 +75,7 @@ apis:
 - name: Reddit Get Prefs Where
   x-api-slug: reddit
   description: This endpoint is a listing.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////prefs/where
   tags: Prefs, Where
@@ -96,22 +93,22 @@ apis:
     to the PERM bucket. It also adds it to the DB using name as the column
     and sr_fullname as the key and sends the status on the websocket URL
     that is provided as part of this response.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////v1/subreddit/emoji.json
   tags: Subreddit, Emoji.json
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/v1subredditemojijson-postnbsp-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/v1subredditemoji-json-postnbsp-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/v1subredditemojijson-postnbsp-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/v1subredditemoji-json-postnbsp-openapi.md
 - name: Reddit Delete Subreddit Emoji Emoji Name
   x-api-slug: reddit
   description: |-
     Delete a Subreddit emoji.
     Remove the emoji from Cassandra and purge the assets from S3
     and the image resizing provider.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////v1/subreddit/emoji/emoji_name
   tags: Subreddit, Emoji, Emoji, Name
@@ -128,21 +125,21 @@ apis:
     assets to S3 bucket, S3 url for upload request and the key to use for
     uploading. Using this lease the client will upload the emoji image to
     S3 temp bucket (included as part of the S3 URL).
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////v1/subreddit/emoji_asset_upload_s3.json
   tags: Subreddit, Emoji, Asset, Upload, S3.json
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/v1subredditemoji-asset-upload-s3json-postnbsp-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/v1subredditemoji-asset-upload-s3-json-postnbsp-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/v1subredditemoji-asset-upload-s3json-postnbsp-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/v1subredditemoji-asset-upload-s3-json-postnbsp-openapi.md
 - name: Reddit Get Subreddit Emojis All
   x-api-slug: reddit
   description: |-
     Get all emojis for a SR. The response inclueds reddit emojis
     as well as emojis for the SR specified in the request.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////v1/subreddit/emojis/all
   tags: Subreddit, Emojis
@@ -152,7 +149,7 @@ apis:
 - name: Reddit Add Gold Gild Fullname
   x-api-slug: reddit
   description: fullname of a thing
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////v1/gold/gild/fullname
   tags: Gold, Gild, Fullname
@@ -164,7 +161,7 @@ apis:
 - name: Reddit Add Gold Give Username
   x-api-slug: reddit
   description: an integer between 1 and 36
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////v1/gold/give/username
   tags: Gold, Give, Username
@@ -176,19 +173,19 @@ apis:
 - name: Reddit Get Best
   x-api-slug: reddit
   description: This endpoint is a listing.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////best.json
   tags: Best
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/bestjson-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/best-json-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/bestjson-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/best-json-get-openapi.md
 - name: Reddit Get By Names
   x-api-slug: reddit
   description: Get a listing of links by fullname.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////by_id/names
   tags: Names
@@ -200,7 +197,7 @@ apis:
 - name: Reddit Get Subreddit Comments Article
   x-api-slug: reddit
   description: Get the comment tree for a given Link article.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com///{/r/subreddit}/comments/article
   tags: Subreddit, Comments, Article
@@ -210,7 +207,7 @@ apis:
 - name: Reddit Get Duplicates Article
   x-api-slug: reddit
   description: Return a list of other submissions of the same URL
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////duplicates/article
   tags: Duplicates, Article
@@ -220,55 +217,55 @@ apis:
 - name: Reddit Get Subreddit Hot
   x-api-slug: reddit
   description: This endpoint is a listing.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com///{/r/subreddit}/hot.json
   tags: Subreddit, Hot
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/rsubreddithotjson-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/rsubreddithot-json-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/rsubreddithotjson-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/rsubreddithot-json-get-openapi.md
 - name: Reddit Get Subreddit New
   x-api-slug: reddit
   description: This endpoint is a listing.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com///{/r/subreddit}/new.json
   tags: Subreddit, New
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/rsubredditnewjson-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/rsubredditnew-json-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/rsubredditnewjson-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/rsubredditnew-json-get-openapi.md
 - name: Reddit Get Subreddit Random
   x-api-slug: reddit
   description: The Serendipity button
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com///{/r/subreddit}/random.json
   tags: Subreddit, Random
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/rsubredditrandomjson-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/rsubredditrandom-json-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/rsubredditrandomjson-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/rsubredditrandom-json-get-openapi.md
 - name: Reddit Get Subreddit Rising
   x-api-slug: reddit
   description: This endpoint is a listing.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com///{/r/subreddit}/rising.json
   tags: Subreddit, Rising
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/rsubredditrisingjson-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/rsubredditrising-json-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/rsubredditrisingjson-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/rsubredditrising-json-get-openapi.md
 - name: Reddit Get Subreddit Sort
   x-api-slug: reddit
   description: This endpoint is a listing.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com///{/r/subreddit}/sort
   tags: Subreddit, Sort
@@ -280,7 +277,7 @@ apis:
 - name: Reddit Add Block
   x-api-slug: reddit
   description: For blocking the author of a thing via inbox.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////block
   tags: Block
@@ -292,7 +289,7 @@ apis:
 - name: Reddit Add Collapse Message
   x-api-slug: reddit
   description: Collapse a message
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////collapse_message
   tags: Collapse, Message
@@ -304,7 +301,7 @@ apis:
 - name: Reddit Add Compose
   x-api-slug: reddit
   description: Handles message composition under /message/compose.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////compose
   tags: Compose
@@ -314,7 +311,7 @@ apis:
 - name: Reddit Add Del Msg
   x-api-slug: reddit
   description: Delete messages from the recipient&#39;s view of their inbox.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////del_msg
   tags: Del, Msg
@@ -326,7 +323,7 @@ apis:
 - name: Reddit Add Read All Messages
   x-api-slug: reddit
   description: Queue up marking all messages for a user as read.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////read_all_messages
   tags: Read, Messages
@@ -336,7 +333,7 @@ apis:
 - name: Reddit Add Read Message
   x-api-slug: reddit
   description: A comma-separated list of thing fullnames
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////read_message
   tags: Read, Message
@@ -348,7 +345,7 @@ apis:
 - name: Reddit Add Unblock Subreddit
   x-api-slug: reddit
   description: fullname of a thing
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////unblock_subreddit
   tags: Unblock, Subreddit
@@ -360,7 +357,7 @@ apis:
 - name: Reddit Add Uncollapse Message
   x-api-slug: reddit
   description: Uncollapse a message
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////uncollapse_message
   tags: Uncollapse, Message
@@ -372,7 +369,7 @@ apis:
 - name: Reddit Add Unread Message
   x-api-slug: reddit
   description: A comma-separated list of thing fullnames
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////unread_message
   tags: Unread, Message
@@ -384,7 +381,7 @@ apis:
 - name: Reddit Get Message Where
   x-api-slug: reddit
   description: This endpoint is a listing.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////message/where
   tags: Message, Where
@@ -396,7 +393,7 @@ apis:
 - name: Reddit Get Subreddit About Log
   x-api-slug: reddit
   description: Get a list of recent moderation actions.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com///{/r/subreddit}/about/log
   tags: Subreddit, About, Log
@@ -408,7 +405,7 @@ apis:
 - name: Reddit Get Subreddit About Location
   x-api-slug: reddit
   description: Return a listing of posts relevant to moderators.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com///{/r/subreddit}/about/location
   tags: Subreddit, About, Location
@@ -420,7 +417,7 @@ apis:
 - name: Reddit Add Subreddit Accept Moderator Invite
   x-api-slug: reddit
   description: Accept an invite to moderate the specified subreddit.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com///{/r/subreddit}/accept_moderator_invite
   tags: Subreddit, Accept, Moderator, Invite
@@ -432,7 +429,7 @@ apis:
 - name: Reddit Add Approve
   x-api-slug: reddit
   description: Approve a link or comment.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////approve
   tags: Approve
@@ -444,7 +441,7 @@ apis:
 - name: Reddit Add Distinguish
   x-api-slug: reddit
   description: Distinguish a thing&#39;s author with a sigil.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////distinguish
   tags: Distinguish
@@ -456,7 +453,7 @@ apis:
 - name: Reddit Add Ignore Reports
   x-api-slug: reddit
   description: Prevent future reports on a thing from causing notifications.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////ignore_reports
   tags: Ignore, Reports
@@ -466,7 +463,7 @@ apis:
 - name: Reddit Add Leavecontributor
   x-api-slug: reddit
   description: Abdicate approved submitter status in a subreddit.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////leavecontributor
   tags: Leavecontributor
@@ -478,7 +475,7 @@ apis:
 - name: Reddit Add Leavemoderator
   x-api-slug: reddit
   description: Abdicate moderator status in a subreddit.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////leavemoderator
   tags: Leavemoderator
@@ -490,7 +487,7 @@ apis:
 - name: Reddit Add Mute Message Author
   x-api-slug: reddit
   description: For muting user via modmail.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////mute_message_author
   tags: Mute, Message, Author
@@ -502,7 +499,7 @@ apis:
 - name: Reddit Add Remove
   x-api-slug: reddit
   description: Remove a link, comment, or modmail message.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////remove
   tags: Remove
@@ -514,7 +511,7 @@ apis:
 - name: Reddit Add Unignore Reports
   x-api-slug: reddit
   description: Allow future reports on a thing to cause notifications.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////unignore_reports
   tags: Unignore, Reports
@@ -524,7 +521,7 @@ apis:
 - name: Reddit Add Unmute Message Author
   x-api-slug: reddit
   description: For unmuting user via modmail.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////unmute_message_author
   tags: Unmute, Message, Author
@@ -536,7 +533,7 @@ apis:
 - name: Reddit Get Subreddit Stylesheet
   x-api-slug: reddit
   description: Redirect to the subreddit&#39;s stylesheet if one exists.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com///{/r/subreddit}/stylesheet
   tags: Subreddit, Stylesheet
@@ -548,7 +545,7 @@ apis:
 - name: Reddit Add Multi Copy
   x-api-slug: reddit
   description: Copy a multi.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////multi/copy
   tags: Multi, Copy
@@ -558,7 +555,7 @@ apis:
 - name: Reddit Get Multi Mine
   x-api-slug: reddit
   description: Fetch a list of multis belonging to the current user.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////multi/mine
   tags: Multi, Mine
@@ -570,7 +567,7 @@ apis:
 - name: Reddit Add Multi Rename
   x-api-slug: reddit
   description: Rename a multi.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////multi/rename
   tags: Multi, Rename
@@ -582,7 +579,7 @@ apis:
 - name: Reddit Get Multi User Username
   x-api-slug: reddit
   description: Fetch a list of public multis belonging to username
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////multi/user/username
   tags: Multi, User, Username
@@ -594,7 +591,7 @@ apis:
 - name: Reddit Delete Multi Multipath
   x-api-slug: reddit
   description: Delete a multi.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////multi/multipath
   tags: Multi, Multipath
@@ -606,7 +603,7 @@ apis:
 - name: Reddit Get Multi Multipath
   x-api-slug: reddit
   description: Fetch a multi&#39;s data and subreddit list by name.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////multi/multipath
   tags: Multi, Multipath
@@ -618,7 +615,7 @@ apis:
 - name: Reddit Add Multi Multipath
   x-api-slug: reddit
   description: Create a multi. Responds with 409 Conflict if it already exists.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////multi/multipath
   tags: Multi, Multipath
@@ -630,7 +627,7 @@ apis:
 - name: Reddit Put Multi Multipath
   x-api-slug: reddit
   description: Create or update a multi.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////multi/multipath
   tags: Multi, Multipath
@@ -642,7 +639,7 @@ apis:
 - name: Reddit Get Multi Multipath Description
   x-api-slug: reddit
   description: Get a multi&#39;s description.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////multi/multipath/description
   tags: Multi, Multipath, Description
@@ -654,7 +651,7 @@ apis:
 - name: Reddit Put Multi Multipath Description
   x-api-slug: reddit
   description: Change a multi&#39;s markdown description.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////multi/multipath/description
   tags: Multi, Multipath, Description
@@ -666,7 +663,7 @@ apis:
 - name: Reddit Delete Multi Multipath Srname
   x-api-slug: reddit
   description: Remove a subreddit from a multi.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////multi/multipath/r/srname
   tags: Multi, Multipath, Srname
@@ -678,7 +675,7 @@ apis:
 - name: Reddit Get Multi Multipath Srname
   x-api-slug: reddit
   description: Get data about a subreddit in a multi.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////multi/multipath/r/srname
   tags: Multi, Multipath, Srname
@@ -690,7 +687,7 @@ apis:
 - name: Reddit Put Multi Multipath Srname
   x-api-slug: reddit
   description: Add a subreddit to a multi.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////multi/multipath/r/srname
   tags: Multi, Multipath, Srname
@@ -702,7 +699,7 @@ apis:
 - name: Reddit Get Subreddit About Where
   x-api-slug: reddit
   description: This endpoint is a listing.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com///{/r/subreddit}/about/where
   tags: Subreddit, About, Where
@@ -714,7 +711,7 @@ apis:
 - name: Reddit Add Subreddit Delete Sr Banner
   x-api-slug: reddit
   description: Remove the subreddit&#39;s custom mobile banner.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com///{/r/subreddit}/delete_sr_banner
   tags: Subreddit, , Sr, Banner
@@ -726,7 +723,7 @@ apis:
 - name: Reddit Add Subreddit Delete Sr Header
   x-api-slug: reddit
   description: Remove the subreddit&#39;s custom header image.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com///{/r/subreddit}/delete_sr_header
   tags: Subreddit, , Sr, Header
@@ -738,7 +735,7 @@ apis:
 - name: Reddit Add Subreddit Delete Sr Icon
   x-api-slug: reddit
   description: Remove the subreddit&#39;s custom mobile icon.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com///{/r/subreddit}/delete_sr_icon
   tags: Subreddit, , Sr, Icon
@@ -748,7 +745,7 @@ apis:
 - name: Reddit Add Subreddit Delete Sr Img
   x-api-slug: reddit
   description: Remove an image from the subreddit&#39;s custom image set.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com///{/r/subreddit}/delete_sr_img
   tags: Subreddit, , Sr, Img
@@ -760,7 +757,7 @@ apis:
 - name: Reddit Get Recommend Sr Srnames
   x-api-slug: reddit
   description: Return subreddits recommended for the given subreddit(s).
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////recommend/sr/srnames
   tags: Recommend, Sr, Srnames
@@ -772,17 +769,17 @@ apis:
 - name: Reddit Get Search Reddit Names
   x-api-slug: reddit
   description: List subreddit names that begin with a query string.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////api/search_reddit_names.json
   tags: Search, Reddit, Names
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/apisearch-reddit-namesjson-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/apisearch-reddit-names-json-get-openapi.md
 - name: Reddit Add Search Reddit Names
   x-api-slug: reddit
   description: List subreddit names that begin with a query string.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////search_reddit_names
   tags: Search, Reddit, Names
@@ -792,7 +789,7 @@ apis:
 - name: Reddit Add Search Subreddits
   x-api-slug: reddit
   description: List subreddits that begin with a query string.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////search_subreddits
   tags: Search, Subreddits
@@ -802,7 +799,7 @@ apis:
 - name: Reddit Add Site Admin
   x-api-slug: reddit
   description: Create or configure a subreddit.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////site_admin
   tags: Site, Admin
@@ -814,7 +811,7 @@ apis:
 - name: Reddit Get Subreddit Submit Text
   x-api-slug: reddit
   description: Get the submission text for the subreddit.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com///{/r/subreddit}/submit_text
   tags: Subreddit, Submit, Text
@@ -828,7 +825,7 @@ apis:
   description: |-
     Return a list of subreddits and data for subreddits whose names start
     with &#39;query&#39;.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////subreddit_autocomplete
   tags: Subreddit, Autocomplete
@@ -838,7 +835,7 @@ apis:
 - name: Reddit Get Subreddit Autocomplete V2
   x-api-slug: reddit
   description: boolean value
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////subreddit_autocomplete_v2
   tags: Subreddit, Autocomplete, V2
@@ -848,7 +845,7 @@ apis:
 - name: Reddit Add Subreddit Subreddit Stylesheet
   x-api-slug: reddit
   description: Update a subreddit&#39;s stylesheet.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com///{/r/subreddit}/subreddit_stylesheet
   tags: Subreddit, Subreddit, Stylesheet
@@ -860,19 +857,19 @@ apis:
 - name: Reddit Get New Subreddits
   x-api-slug: reddit
   description: Returns new subreddits.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////subreddits/new.json
   tags: Subreddits, New
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/subredditsnewjson-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/subredditsnew-json-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/subredditsnewjson-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/subredditsnew-json-get-openapi.md
 - name: Reddit Add Subscribe
   x-api-slug: reddit
   description: Subscribe to or unsubscribe from a subreddit.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////subscribe
   tags: Subscribe
@@ -886,7 +883,7 @@ apis:
   description: |-
     Add or replace a subreddit image, custom header logo, custom mobile
     icon, or custom mobile banner.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com///{/r/subreddit}/upload_sr_img
   tags: Subreddit, Upload, Sr, Img
@@ -898,7 +895,7 @@ apis:
 - name: Reddit Get Subreddit About
   x-api-slug: reddit
   description: Return information about the subreddit.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////r/subreddit/about
   tags: Subreddit, About
@@ -910,7 +907,7 @@ apis:
 - name: Reddit Get Subreddit About Edit
   x-api-slug: reddit
   description: Get the current settings of a subreddit.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////r/subreddit/about/edit
   tags: Subreddit, About, Edit
@@ -922,7 +919,7 @@ apis:
 - name: Reddit Get Subreddit About Rules
   x-api-slug: reddit
   description: Get the rules for the current subreddit
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////r/subreddit/about/rules
   tags: Subreddit, About, Rules
@@ -932,7 +929,7 @@ apis:
 - name: Reddit Get Subreddit About Traffic
   x-api-slug: reddit
   description: Get the traffic for the current subreddit
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////r/subreddit/about/traffic
   tags: Subreddit, About, Traffic
@@ -942,7 +939,7 @@ apis:
 - name: Reddit Get Subreddit Sebar
   x-api-slug: reddit
   description: Get the sidebar for the current subreddit
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com///{/r/subreddit}/sidebar
   tags: Subreddit, Sebar
@@ -954,7 +951,7 @@ apis:
 - name: Reddit Get Subreddit Sticky
   x-api-slug: reddit
   description: Redirect to one of the posts stickied in the current subreddit
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com///{/r/subreddit}/sticky
   tags: Subreddit, Sticky
@@ -966,7 +963,7 @@ apis:
 - name: Reddit Get Subreddits Mine Where
   x-api-slug: reddit
   description: Get subreddits the user has a relationship with.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////subreddits/mine/where
   tags: Subreddits, Mine, Where
@@ -978,29 +975,29 @@ apis:
 - name: Reddit Get Subreddits Search
   x-api-slug: reddit
   description: Search subreddits by title and description.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////subreddits/search.json
   tags: Subreddits, Search
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/subredditssearchjson-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/subredditssearch-json-get-openapi.md
 - name: Reddit Get Subreddits Where
   x-api-slug: reddit
   description: Get all subreddits.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////subreddits/popular.json
   tags: Subreddits, Where
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/subredditspopularjson-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/subredditspopular-json-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/subredditspopularjson-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/subredditspopular-json-get-openapi.md
 - name: Reddit Get Users Where
   x-api-slug: reddit
   description: Get all user subreddits.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com////users/where
   tags: Users, Where
@@ -1010,7 +1007,7 @@ apis:
 - name: Reddit Add Subreddit Wiki Alloweditor Act
   x-api-slug: reddit
   description: Allow/deny username to edit this wiki page
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com///{/r/subreddit}/wiki/alloweditor/act
   tags: Subreddit, Wikioweditor, Act
@@ -1020,7 +1017,7 @@ apis:
 - name: Reddit Subreddit Wiki Edit
   x-api-slug: reddit
   description: Edit a wiki page
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com///{/r/subreddit}/wiki/edit
   tags: Subreddit, Wiki, Edit
@@ -1030,7 +1027,7 @@ apis:
 - name: Reddit Add Subreddit Wiki
   x-api-slug: reddit
   description: Toggle the public visibility of a wiki page revision
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com///{/r/subreddit}/wiki/hide
   tags: Subreddit, Wiki
@@ -1040,7 +1037,7 @@ apis:
 - name: Reddit Add Subreddit Wiki Revert
   x-api-slug: reddit
   description: Revert a wiki page to revision
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com///{/r/subreddit}/wiki/revert
   tags: Subreddit, Wiki, Revert
@@ -1050,7 +1047,7 @@ apis:
 - name: Reddit Get Subreddit Wiki Discussions Page
   x-api-slug: reddit
   description: Retrieve a list of discussions about this wiki page
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com///{/r/subreddit}/wiki/discussions/page
   tags: Subreddit, Wiki, Discussions, Page
@@ -1060,7 +1057,7 @@ apis:
 - name: Reddit Get Subreddit Wiki Pages
   x-api-slug: reddit
   description: Retrieve a list of wiki pages in this subreddit
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com///{/r/subreddit}/wiki/pages
   tags: Subreddit, Wiki, Pages
@@ -1070,7 +1067,7 @@ apis:
 - name: Reddit Get Subreddit Wiki Revisions
   x-api-slug: reddit
   description: Retrieve a list of recently changed wiki pages in this subreddit
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com///{/r/subreddit}/wiki/revisions
   tags: Subreddit, Wiki, Revisions
@@ -1080,7 +1077,7 @@ apis:
 - name: Reddit Get Subreddit Wiki Revisions Page
   x-api-slug: reddit
   description: Retrieve a list of revisions of this wiki page
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com///{/r/subreddit}/wiki/revisions/page
   tags: Subreddit, Wiki, Revisions, Page
@@ -1090,7 +1087,7 @@ apis:
 - name: Reddit Get Subreddit Wiki Settings Page
   x-api-slug: reddit
   description: Retrieve the current permission settings for page
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com///{/r/subreddit}/wiki/settings/page
   tags: Subreddit, Wiki, Settings, Page
@@ -1100,7 +1097,7 @@ apis:
 - name: Reddit Add Subreddit Wiki Settings Page
   x-api-slug: reddit
   description: Update the permissions and visibility of wiki page
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com///{/r/subreddit}/wiki/settings/page
   tags: Subreddit, Wiki, Settings, Page
@@ -1110,7 +1107,7 @@ apis:
 - name: Reddit Get Subreddit Wiki Page
   x-api-slug: reddit
   description: Return the content of a wiki page
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com///{/r/subreddit}/wiki/page
   tags: Subreddit, Wiki, Page
@@ -1119,12 +1116,9 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/reddit/master/_listings/reddit/rsubredditwikipage-getnbsp-openapi.md
 - name: Reddit
   x-api-slug: reddit
-  description: Reddit /??r??d?t/, stylized as reddit, is an entertainment, social
-    networking service and news website where registered community members can submit
-    content, such as text posts or direct links. Only registered users can then vote
-    submissions up or down to organize the posts and determine their position on the
-    sites pages. Content entries are organized by areas of interest called subreddits.
-  image: http://www.redditstatic.com/about/assets/reddit-logo.png
+  description: Reddit is a community of millions of users engaging in the creation
+    of content and the sharing of conversation across tens of thousands of topics.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com//
   tags: Reddit
@@ -1148,8 +1142,12 @@ x-common:
   url: https://github.com/reddit/reddit/wiki/API-Wrappers
 - type: x-console
   url: https://apigee.com/console/reddit
+- type: x-crunchbase
+  url: https://crunchbase.com/organization/reddit
 - type: x-developer
   url: http://www.reddit.com/dev/api
+- type: x-email
+  url: legal@reddit.com
 - type: x-github
   url: https://github.com/reddit
 - type: x-privacy

@@ -171,7 +171,7 @@ paths:
         and sr_fullname as the key and sends the status on the websocket URL
         that is provided as part of this response.
       operationId: post&nbsp;V1SubredditEmoji.json
-      x-api-path-slug: v1subredditemojijson-postnbsp
+      x-api-path-slug: v1subredditemoji-json-postnbsp
       parameters:
       - in: query
         name: name
@@ -215,7 +215,7 @@ paths:
         uploading. Using this lease the client will upload the emoji image to
         S3 temp bucket (included as part of the S3 URL).
       operationId: post&nbsp;V1SubredditEmojiAssetUploadS3.json
-      x-api-path-slug: v1subredditemoji-asset-upload-s3json-postnbsp
+      x-api-path-slug: v1subredditemoji-asset-upload-s3-json-postnbsp
       parameters:
       - in: query
         name: filepath

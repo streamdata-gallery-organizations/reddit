@@ -173,7 +173,7 @@ paths:
         and sr_fullname as the key and sends the status on the websocket URL
         that is provided as part of this response.
       operationId: post&nbsp;V1SubredditEmoji.json
-      x-api-path-slug: v1subredditemojijson-postnbsp
+      x-api-path-slug: v1subredditemoji-json-postnbsp
       parameters:
       - in: query
         name: name
@@ -217,7 +217,7 @@ paths:
         uploading. Using this lease the client will upload the emoji image to
         S3 temp bucket (included as part of the S3 URL).
       operationId: post&nbsp;V1SubredditEmojiAssetUploadS3.json
-      x-api-path-slug: v1subredditemoji-asset-upload-s3json-postnbsp
+      x-api-path-slug: v1subredditemoji-asset-upload-s3-json-postnbsp
       parameters:
       - in: query
         name: filepath
@@ -295,7 +295,7 @@ paths:
       summary: Get Best
       description: This endpoint is a listing.
       operationId: get&nbsp;Best
-      x-api-path-slug: bestjson-get
+      x-api-path-slug: best-json-get
       parameters:
       - in: query
         name: after
@@ -447,7 +447,7 @@ paths:
       summary: Get Subreddit Hot
       description: This endpoint is a listing.
       operationId: get&nbsp;RSubredditHot
-      x-api-path-slug: rsubreddithotjson-get
+      x-api-path-slug: rsubreddithot-json-get
       parameters:
       - in: path
         name: /r/subreddit
@@ -499,7 +499,7 @@ paths:
       summary: Get Subreddit New
       description: This endpoint is a listing.
       operationId: get&nbsp;RSubredditNew
-      x-api-path-slug: rsubredditnewjson-get
+      x-api-path-slug: rsubredditnew-json-get
       parameters:
       - in: path
         name: /r/subreddit
@@ -541,7 +541,7 @@ paths:
       summary: Get Subreddit Random
       description: The Serendipity button
       operationId: get&nbsp;RSubredditRandom
-      x-api-path-slug: rsubredditrandomjson-get
+      x-api-path-slug: rsubredditrandom-json-get
       parameters:
       - in: path
         name: /r/subreddit
@@ -559,7 +559,7 @@ paths:
       summary: Get Subreddit Rising
       description: This endpoint is a listing.
       operationId: get&nbsp;RSubredditRising
-      x-api-path-slug: rsubredditrisingjson-get
+      x-api-path-slug: rsubredditrising-json-get
       parameters:
       - in: path
         name: /r/subreddit
@@ -1723,7 +1723,7 @@ paths:
       summary: Get Search Reddit Names
       description: List subreddit names that begin with a query string.
       operationId: get&nbsp;SearchRedditNames
-      x-api-path-slug: apisearch-reddit-namesjson-get
+      x-api-path-slug: apisearch-reddit-names-json-get
       parameters:
       - in: query
         name: exact
